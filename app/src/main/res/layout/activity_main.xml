@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/home_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/welcomeTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="@dimen/text_margin"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Welcome to CricFrik!"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/subtitleTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/averia_sans_libre"
+                android:text="Check out what fans are discussing today"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcomeTextview" />
+
+
+            <TextView
+                android:id="@+id/enterthreadTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/arimo_bold"
+                android:text="Enter a Thread"
+                android:textColor="@color/teal_200"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subtitleTextview" />
+
+            <LinearLayout
+                android:id="@+id/threadPiece1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginRight="@dimen/text_margin"
+                android:background="@drawable/mibg"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/thread1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arimo_bold"
+                    android:padding="5dp"
+                    android:text="@string/text_thread1"
+                    android:textColor="#F1E6E6" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="2"
+
+                        android:padding="5dp"
+                        android:src="@drawable/ic_action_profile" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/averia_sans_libre"
+                        android:padding="5dp"
+                        android:text="Apurva Shukla"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/threadPiece2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="@dimen/text_margin"
+                android:background="@drawable/cskbg"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/thread2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arimo_bold"
+                    android:padding="5dp"
+                    android:text="@string/text_thread2"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="2"
+
+                        android:padding="5dp"
+                        android:src="@drawable/ic_action_profile" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/averia_sans_libre"
+                        android:padding="3dp"
+                        android:text="Apurva Shukla"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/threadPiece3"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="@dimen/text_margin"
+                android:background="@drawable/rrbg"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/thread3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arimo_bold"
+                    android:padding="5dp"
+                    android:text="@string/text_thread3"
+                    android:textColor="#F1E6E6" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="2"
+
+                        android:padding="5dp"
+                        android:src="@drawable/ic_action_profile" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/averia_sans_libre"
+                        android:padding="2dp"
+                        android:text="Apurva Shukla"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/threadPiece4"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="@dimen/text_margin"
+                android:background="@drawable/srhbg"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/thread4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arimo_bold"
+                    android:padding="5dp"
+                    android:text="@string/text_thread4"
+                    android:textColor="#F1E6E6" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="2"
+
+                        android:padding="5dp"
+                        android:src="@drawable/ic_action_profile" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/averia_sans_libre"
+                        android:padding="3dp"
+                        android:text="Apurva Shukla"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginRight="@dimen/text_margin"
+                android:fontFamily="@font/arimo_bold"
+                android:text="Enter a Group"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/group1"
+                    android:layout_width="150dp"
+
+                    android:layout_height="50dp"
+                    android:background="@drawable/cskbg"
+                    android:fontFamily="@font/archivo_black"
+                    android:text="CSK"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/text_margin"
+                    android:background="@drawable/cskbg"
+                    android:fontFamily="@font/archivo_black"
+                    android:text="RR"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/cskbg"
+                    android:fontFamily="@font/archivo_black"
+                    android:text="MI"
+
+                    android:textSize="24sp" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/cskbg"
+                    android:fontFamily="@font/archivo_black"
+                    android:text="SRH"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/cskbg"
+                    android:fontFamily="@font/archivo_black"
+                    android:text="RCB"
+
+                    android:textSize="24sp" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/cskbg"
+                    android:fontFamily="@font/archivo_black"
+                    android:text="PBKS"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/cskbg"
+                    android:fontFamily="@font/archivo_black"
+                    android:text="DC"
+
+                    android:textSize="24sp" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/cskbg"
+                    android:fontFamily="@font/archivo_black"
+                    android:text="KKR"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cric News"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginRight="@dimen/text_margin"
+                android:textSize="22sp"
+                android:fontFamily="@font/arimo_bold"/>
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text_margin"
+                        android:layout_marginRight="@dimen/text_margin"
+                        android:background="@drawable/mibg"
+                        android:fontFamily="@font/roboto_medium"
+                        android:padding="4dp"
+                        android:text="@string/news1"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text_margin"
+                        android:layout_marginRight="@dimen/text_margin"
+                        android:background="@drawable/mibg"
+                        android:fontFamily="@font/roboto_medium"
+                        android:padding="4dp"
+                        android:text="@string/news2"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text_margin"
+                        android:layout_marginRight="@dimen/text_margin"
+                        android:background="@drawable/mibg"
+                        android:fontFamily="@font/roboto_medium"
+                        android:padding="4dp"
+                        android:text="@string/news3"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin"
+                        android:layout_marginLeft="@dimen/text_margin"
+                        android:layout_marginRight="@dimen/text_margin"
+                        android:background="@drawable/mibg"
+                        android:fontFamily="@font/roboto_medium"
+                        android:padding="4dp"
+                        android:text="@string/news4"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>
