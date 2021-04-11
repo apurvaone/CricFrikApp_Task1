@@ -38,6 +38,8 @@ class HomeFragment : Fragment() {
             view.findNavController().navigate(R.id.action_homeFragment_to_threadFragment)
 
         }
+
+        
         binding.thread3.setOnClickListener {view:View->
             view.findNavController().navigate(R.id.action_homeFragment_to_threadFragment)
 
