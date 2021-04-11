@@ -7,6 +7,24 @@
     <fragment
         android:id="@+id/homeFragment"
         tools:layout="@layout/fragment_home"
+
         android:name="com.example.cricfrikkapp.HomeFragment"
-        android:label="HomeFragment" />
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_threadFragment"
+            app:destination="@id/threadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.cricfrikkapp.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/threadFragment"
+        tools:layout="@layout/fragment_thread"
+        android:name="com.example.cricfrikkapp.ThreadFragment"
+        android:label="ThreadFragment" />
 </navigation>
