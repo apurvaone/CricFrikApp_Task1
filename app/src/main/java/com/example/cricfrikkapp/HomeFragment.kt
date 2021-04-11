@@ -50,6 +50,36 @@ class HomeFragment : Fragment() {
 
         }
 
+
+        binding.group1.setOnClickListener{
+            it->it.findNavController().navigate(R.id.action_homeFragment_to_cricgroupFragment)
+        }
+
+        binding.group2.setOnClickListener{
+                it->it.findNavController().navigate(R.id.action_homeFragment_to_cricgroupFragment)
+        }
+
+        binding.group3.setOnClickListener{
+                it->it.findNavController().navigate(R.id.action_homeFragment_to_cricgroupFragment)
+        }
+
+        binding.group4.setOnClickListener{
+                it->it.findNavController().navigate(R.id.action_homeFragment_to_cricgroupFragment)
+        }
+
+        binding.group5.setOnClickListener{
+                it->it.findNavController().navigate(R.id.action_homeFragment_to_cricgroupFragment)
+        }
+
+        binding.group6.setOnClickListener{
+                it->it.findNavController().navigate(R.id.action_homeFragment_to_cricgroupFragment)
+        }
+        binding.group7.setOnClickListener{
+                it->it.findNavController().navigate(R.id.action_homeFragment_to_cricgroupFragment)
+        }
+        binding.group8.setOnClickListener{
+                it->it.findNavController().navigate(R.id.action_homeFragment_to_cricgroupFragment)
+        }
         return binding.root
     }
 

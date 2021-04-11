@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_homeFragment_to_threadFragment"
             app:destination="@id/threadFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cricgroupFragment"
+            app:destination="@id/cricgroupFragment" />
     </fragment>
     <fragment
         android:id="@+id/settingFragment"
@@ -27,4 +30,9 @@
         tools:layout="@layout/fragment_thread"
         android:name="com.example.cricfrikkapp.ThreadFragment"
         android:label="ThreadFragment" />
+    <fragment
+        android:id="@+id/cricgroupFragment"
+        tools:layout="@layout/fragment_cricgroup"
+        android:name="com.example.cricfrikkapp.CricgroupFragment"
+        android:label="CricgroupFragment" />
 </navigation>

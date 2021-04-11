@@ -7,6 +7,8 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.example.cricfrikkapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -32,10 +34,19 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
         //binding= DataBindingUtil.setContentView(this,R.layout.activity_main)
+        val navController = this.findNavController(R.id.myNavHostFragment)
+        NavigationUI.setupActionBarWithNavController(this,navController)
+
+
         getSupportActionBar()!!.setDisplayShowHomeEnabled(true)
         getSupportActionBar()!!.setLogo(R.drawable.cf9)
         getSupportActionBar()!!.setDisplayShowTitleEnabled(false)
 
         getSupportActionBar()!!.setDisplayUseLogoEnabled(true)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = this.findNavController(R.id.myNavHostFragment)
+        return navController.navigateUp()
     }
 }
