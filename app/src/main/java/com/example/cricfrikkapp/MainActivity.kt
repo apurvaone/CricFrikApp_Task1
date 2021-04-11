@@ -1,12 +1,17 @@
 package com.example.cricfrikkapp
 
-import android.support.v7.app.AppCompatActivity
+
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import com.example.cricfrikkapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding:ActivityMainBinding
 
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -25,8 +30,8 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
         setContentView(R.layout.activity_main)
+        //binding= DataBindingUtil.setContentView(this,R.layout.activity_main)
         getSupportActionBar()!!.setDisplayShowHomeEnabled(true)
         getSupportActionBar()!!.setLogo(R.drawable.cf9)
         getSupportActionBar()!!.setDisplayShowTitleEnabled(false)

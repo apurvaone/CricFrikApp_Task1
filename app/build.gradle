@@ -9,12 +9,18 @@ android {
 
     defaultConfig {
         applicationId "com.example.cricfrikkapp"
-        minSdkVersion 26
+        minSdkVersion 28
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+
+
+    buildFeatures {
+        dataBinding true
     }
 
     buildTypes {
@@ -40,6 +46,11 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     implementation 'android.arch.navigation:navigation-fragment-ktx:1.0.0'
     implementation 'android.arch.navigation:navigation-ui-ktx:1.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
